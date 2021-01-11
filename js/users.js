@@ -1,33 +1,86 @@
 "use strict";
 
-class User {
-  constructor({ name, age, followers }) {
-    this.name = name;
-    this.age = age;
-    this.followers = followers;
-  }
-
-  getInfo() {
-    console.log(
-      `User ${this.name} is ${this.age} years old and has ${this.followers} followers`
-    );
-  }
-}
-
-console.log(User);
-
-const mango = new User({
-  name: "Mango",
-  age: 25,
-  followers: 1354,
-});
-
-mango.getInfo(); // User Mango is 25 years old and has 1354 followers
-
-const poly = new User({
-  name: "Poly",
-  age: 3,
-  followers: 17,
-});
-
-poly.getInfo(); // User Poly is 3 years old and has 17 followers
+export default [
+  {
+    name: "Moore Hensley",
+    eyeColor: "blue",
+    gender: "male",
+    isActive: false,
+    email: "moorehensley@expedia.com",
+    age: 39,
+    balance: 1,
+    friends: ["Ross Vazquez"],
+    skills: ["ipsum", "irure", "laborum"],
+  },
+  {
+    name: "Sharlene Bush",
+    eyeColor: "blue",
+    gender: "female",
+    isActive: true,
+    email: "sharlenebush@gmail.com",
+    age: 31,
+    balance: 915,
+    friends: ["Briana Decker", "Sharron Pace"],
+    skills: ["adipisicing", "amet", "anim"],
+  },
+  {
+    name: "Ross Vazquez",
+    eyeColor: "red",
+    gender: "male",
+    isActive: false,
+    email: "rossvazquez@inter.com",
+    age: 29,
+    balance: 3566,
+    friends: [
+      "Marilyn Mcintosh",
+      "Padilla Garrison",
+      "Naomi Buckner",
+      "Moore Hensley",
+    ],
+    skills: ["commodo", "culpa", "elit", "ex"],
+  },
+  {
+    name: "Elma Head",
+    eyeColor: "green",
+    gender: "female",
+    isActive: true,
+    email: "elmahead@omatom.com",
+    age: 24,
+    balance: 2464,
+    friends: ["Goldie Gentry", "Lorem Ipsum"],
+    skills: ["laborum", "lorem", "mollit", "non"],
+  },
+  {
+    name: "Carey Barr",
+    eyeColor: "blue",
+    gender: "male",
+    isActive: true,
+    email: "careybarr@google.net",
+    age: 28,
+    balance: 2328,
+    friends: ["Ross Vazquez", "Chelentano Adriano"],
+    skills: ["non", "nostrud", "nulla", "proident"],
+  },
+  {
+    name: "Blackburn Dotson",
+    eyeColor: "black",
+    gender: "male",
+    isActive: false,
+    email: "blackburndotson@tesla.com",
+    age: 32,
+    balance: 6666,
+    friends: ["Ross Vazquez"],
+    skills: ["ipsum", "irure", "laborum"],
+  },
+  {
+    name: "Sheree Anthony",
+    eyeColor: "black",
+    gender: "female",
+    isActive: true,
+    email: "shereeanthony@kog.com",
+    age: 35,
+    balance: 4976,
+    friends: ["Briana Decker", "Goldie Gentry"],
+    skills: ["veniam", "tempor", "proident", "anim", "velit"],
+  },
+];
