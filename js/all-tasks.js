@@ -4,7 +4,8 @@ import users from "./users.js";
 
 console.warn("TASK-01");
 const getUserNames = (users) => {
-  return users.map((user) => user.name);
+  const userNames = users.map((user) => user.name);
+  return userNames;
 };
 
 console.log(getUserNames(users));
@@ -12,7 +13,8 @@ console.log(getUserNames(users));
 
 console.warn("TASK-02"); //======================================================================================
 const getUsersWithEyeColor = (users, color) => {
-  return users.filter((user) => user.eyeColor === color);
+  const usersEyeColor = users.filter((user) => user.eyeColor === color);
+  return usersEyeColor;
 };
 
 console.log(getUsersWithEyeColor(users, "blue")); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
@@ -31,15 +33,16 @@ console.log(getUsersWithGender(users, "male")); // [ 'Moore Hensley', 'Ross Vazq
 
 console.warn("TASK-04"); //======================================================================================
 const getInactiveUsers = (users) => {
-  return users.filter((user) => !user.isActive);
+  const inActiveUsers = users.filter((user) => !user.isActive);
+  return inActiveUsers;
 };
 
 console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
 
 console.warn("TASK-05"); //======================================================================================
 const getUserWithEmail = (users, email) => {
-  // return users.filter((user) => user.email === email);
-  return users.find((user) => user.email === email);
+  const userWithEmail = users.find((user) => user.email === email);
+  return userWithEmail;
 };
 
 console.table(getUserWithEmail(users, "shereeanthony@kog.com")); // {объект пользователя Sheree Anthony}
@@ -47,7 +50,8 @@ console.table(getUserWithEmail(users, "elmahead@omatom.com")); // {объект 
 
 console.warn("TASK-06"); //======================================================================================
 const getUsersWithAge = (users, min, max) => {
-  return users.filter((user) => user.age >= min && user.age < max);
+  const userWithAge = users.filter((user) => user.age >= min && user.age < max);
+  return userWithAge;
 };
 
 console.log(getUsersWithAge(users, 20, 30)); // [объект Ross Vazquez, объект Elma Head, объект Carey Barr]
@@ -57,7 +61,8 @@ console.log(getUsersWithAge(users, 30, 40));
 
 console.warn("TASK-07"); //======================================================================================
 const calculateTotalBalance = (users) => {
-  return users.reduce((amount, user) => amount + user.balance, 0);
+  const totalBalance = users.reduce((amount, user) => amount + user.balance, 0);
+  return totalBalance;
 };
 
 console.log(calculateTotalBalance(users)); // 20916
